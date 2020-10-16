@@ -1,0 +1,30 @@
+Dispatch_Protocol,
+Device_property::Device_Functionality,
+Period,
+Device_property::Device_Software,
+Device_property::Device_Data_Type_Output,
+Device_property::Device_Application,
+Device_property::On_Chip_Int_Controller,
+Device_property::Device_Bus_Avaliable,
+Device_property::Device_Max_Bus_Bandwidth,
+Device_property::Power_Management_Modes,
+Electricity_Properties::Core_Voltage,
+Electricity_Properties::Run_Current,			
+Device_property::Device_address,
+Device_property::Device_Purchase_data,
+Device_property::Device_LifeCycle,
+Device_property::Device_Last_Update,
+Device_property::Device_review,
+Device_property::Device_review_rate,
+Device_property::Power_Consume, power consumption
+Device_property::Mass,mass
+Device_property::ZRO_25C_GYRO,
+Device_property::ZRO_Over_temp_gyro,
+Device_property::Temperature_Operation,
+Device_property::Accelerometer_Range,
+Device_property::Gyroscope_Range,
+Device_property::Magnetic_field_range,
+Device_property::Magnetic_field_resolution,
+Device_property::Device_review_rate, review rate
+SEI::price,price
+Device_property::Device_address,device addrss
