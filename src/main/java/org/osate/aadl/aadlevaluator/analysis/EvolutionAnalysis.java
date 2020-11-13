@@ -34,8 +34,9 @@ public class EvolutionAnalysis
             "performance" , 
             "" ,
             "factor" , 
-            originalReport.getFactor().doubleValue() , 
-            evolutionReport.getFactor().doubleValue()
+            "Factor" , 
+            originalReport.getFactor( "total" ).doubleValue() , 
+            evolutionReport.getFactor( "total" ).doubleValue()
         ) );
         
         system( results , evolutionReport.getEvolution() );
@@ -58,6 +59,7 @@ public class EvolutionAnalysis
             "maintainability" , 
             "modifiability" ,
             "subcomponents" , 
+            "Subcomponents" , 
             original.getSubcomponentsAll().size() , 
             evoluted.getSubcomponentsAll().size()
         ) );
@@ -66,6 +68,7 @@ public class EvolutionAnalysis
             "maintainability" , 
             "modifiability" ,
             "connections" , 
+            "Connections" , 
             original.getConnectionsAll().size() , 
             evoluted.getConnectionsAll().size()
         ) );
@@ -107,7 +110,14 @@ public class EvolutionAnalysis
                 : p2s.get( 0 );
             
             results.add( 
-                new PropertyAnalysis( "" , "" , prop.getDisplay() , p1 , p2 ) 
+                new PropertyAnalysis( 
+                    "Property" , 
+                    "" , 
+                    prop.getDisplay() ,
+                    prop.getDisplay() ,
+                    p1 , 
+                    p2 
+                )
             );
         }
     }
@@ -230,7 +240,14 @@ public class EvolutionAnalysis
                     continue ;
                 }
                 
-                results.add( new FuncionalityAnalysis( "" , "" , func , subsA , subsB ) );
+                results.add( new FuncionalityAnalysis( 
+                    "Performance" , 
+                    "" , 
+                    func , 
+                    func , 
+                    subsA , 
+                    subsB 
+                ) );
             }
         }
     }

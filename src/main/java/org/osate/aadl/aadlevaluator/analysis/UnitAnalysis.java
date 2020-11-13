@@ -6,9 +6,9 @@ import org.osate.aadl.evaluator.unit.UnitUtils;
 public class UnitAnalysis extends Analysis<String>
 {
     
-    public UnitAnalysis( final String charact , final String sub , final String name , final String valueA , final String valueB )
+    public UnitAnalysis( final String charact , final String sub , final String name , final String title , final String valueA , final String valueB )
     {
-        super( charact , sub , name , valueA , valueB );
+        super( charact , sub , name , title , valueA , valueB );
     }
     
     public double getDiference()

@@ -5,9 +5,9 @@ import java.text.MessageFormat;
 public class NumberAnalysis extends Analysis<Double>
 {
 
-    public NumberAnalysis( final String charact , final String sub , final String name , final double A , final double B ) 
+    public NumberAnalysis( final String charact , final String sub , final String name , final String title , final double A , final double B ) 
     {
-        super( charact , sub , name , A , B );
+        super( charact , sub , name , title , A , B );
     }
     
     public double getDiference()

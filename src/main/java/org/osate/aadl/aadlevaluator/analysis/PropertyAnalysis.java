@@ -7,9 +7,9 @@ import org.osate.aadl.evaluator.project.Property;
 public class PropertyAnalysis extends Analysis<Property>
 {
     
-    public PropertyAnalysis( final String charact , final String sub , final String name , final Property valueA , final Property valueB )
+    public PropertyAnalysis( final String charact , final String sub , final String name , final String title, final Property valueA , final Property valueB )
     {
-        super( charact , sub , name , valueA , valueB );
+        super( charact , sub , name , title , valueA , valueB );
     }
     
     public int getType()
@@ -37,6 +37,7 @@ public class PropertyAnalysis extends Analysis<Property>
                 characteristic , 
                 subcharacteristic ,
                 entry.getKey() + " value of " + name , 
+                title + "(" + name + ")" ,
                 vA , 
                 vB 
             ) );
@@ -51,6 +52,7 @@ public class PropertyAnalysis extends Analysis<Property>
             characteristic , 
             subcharacteristic ,
             name ,
+            title ,
             valueA.getValueArray() , 
             valueB.getValueArray() 
         );
@@ -62,6 +64,7 @@ public class PropertyAnalysis extends Analysis<Property>
             characteristic ,
             subcharacteristic ,
             name ,
+            title ,
             valueA.getValue() , 
             valueB.getValue() 
         );
@@ -75,6 +78,7 @@ public class PropertyAnalysis extends Analysis<Property>
                 characteristic , 
                 subcharacteristic ,
                 name ,
+                title ,
                 Double.parseDouble( valueA.getValue() ) , 
                 Double.parseDouble( valueB.getValue() )
             );
@@ -85,6 +89,7 @@ public class PropertyAnalysis extends Analysis<Property>
                 characteristic , 
                 subcharacteristic ,
                 name ,
+                title ,
                 valueA.getValue() , 
                 valueB.getValue() 
             );

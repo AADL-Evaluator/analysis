@@ -7,9 +7,9 @@ import java.util.List;
 public class ArrayAnalysis extends Analysis<List<String>>
 {
     
-    public ArrayAnalysis(  final String charact , final String sub , final String name , final List<String> valueA, final List<String> valueB )
+    public ArrayAnalysis( final String charact , final String sub , final String name , final String title , final List<String> valueA, final List<String> valueB )
     {
-        super( charact , sub , name , valueA , valueB );
+        super( charact , sub , name , title , valueA , valueB );
     }
     
     public List<String> getRemovedElements()

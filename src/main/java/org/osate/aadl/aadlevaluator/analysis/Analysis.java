@@ -13,14 +13,16 @@ public abstract class Analysis<T>
     protected final String characteristic;
     protected final String subcharacteristic;
     protected final String name;
+    protected final String title;
     protected final T valueA;
     protected final T valueB;
 
-    public Analysis( String charact , String sub , String name , T valueA , T valueB )
+    public Analysis( String charact , String sub , String name , String title , T valueA , T valueB )
     {
         this.characteristic = charact;
         this.subcharacteristic = sub;
         this.name = name;
+        this.title  = title;
         this.valueA = valueA;
         this.valueB = valueB;
     }
@@ -38,6 +40,11 @@ public abstract class Analysis<T>
     public String getName()
     {
         return name;
+    }
+
+    public String getTitle()
+    {
+        return title;
     }
     
     public T getValueA()
